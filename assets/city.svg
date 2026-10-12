@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 630" role="img" aria-labelledby="title description">
+<title id="title">Ночной район Eastwell</title><desc id="description">Стилизованный городской пейзаж: здания, светящиеся окна и автомобиль на проспекте.</desc>
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="#0D2445"/><stop offset="1" stop-color="#070F21"/></linearGradient>
+<linearGradient id="wall" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#285378"/><stop offset=".95" stop-color="#10223F"/></linearGradient>
+<linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#192A41"/><stop offset="1" stop-color="#0B1425"/></linearGradient>
+<pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#6b9fc4" stroke-opacity=".1" stroke-width=".7"/></pattern>
+<pattern id="window" width="32" height="37" patternUnits="userSpaceOnUse"><rect x="8" y="7" width="10" height="18" fill="#75A4BD" opacity=".22"/></pattern>
+</defs>
+<style>
+@keyframes roll{from{transform:translateX(-330px)}to{transform:translateX(930px)}}@keyframes pulse{50%{opacity:.35}}@keyframes windowlight{50%{opacity:.22}}@keyframes scan{to{transform:translateX(800px)}}
+#car{animation:roll 16s linear infinite}#beacon{animation:pulse 2.4s ease-in-out infinite}.warm-window{animation:windowlight 6s ease-in-out infinite}#scan{animation:scan 10s linear infinite}
+@media(prefers-reduced-motion:reduce){#car,#beacon,.warm-window,#scan{animation:none}#car{transform:translateX(180px)}}
+</style>
+<rect width="800" height="630" fill="url(#sky)"/><rect width="800" height="630" fill="url(#grid)"/>
+<path d="M0 255 85 212l42 16 84-51 95 30 65-49 80 45 68-26 78 25 86-52 117 39v244H0Z" fill="#0b2039"/>
+<path d="M0 330h65v-93h76v87h49V211h46v113h51V193h99v131h57V242h103v82h62v-80h89v80h103v137H0Z" fill="#16324F"/>
+<g opacity=".5"><rect x="77" y="257" width="50" height="62" fill="url(#window)"/><rect x="291" y="219" width="90" height="104" fill="url(#window)"/><rect x="455" y="257" width="82" height="68" fill="url(#window)"/><rect x="620" y="259" width="68" height="65" fill="url(#window)"/></g>
+<path d="M42 342V179h178v163Z" fill="#21445f"/><path d="M220 179 244 164v178h-24Z" fill="#0e2742"/><path d="M42 179 65 164h179l-24 15Z" fill="#426a80"/>
+<rect x="57" y="194" width="147" height="135" fill="url(#window)"/><g fill="#f1c68c" opacity=".86"><rect x="82" y="201" width="10" height="18"/><rect x="146" y="238" width="10" height="18"/><rect x="114" y="275" width="10" height="18"/></g>
+<path d="M267 364V100h166v264Z" fill="url(#wall)"/><path d="M433 100 465 83v281h-32Z" fill="#0c203a"/><path d="M267 100 299 83h166l-32 17Z" fill="#64889c"/>
+<rect x="285" y="119" width="130" height="228" fill="url(#window)"/><g fill="#b8dcdb"><rect x="306" y="141" width="10" height="18"/><rect x="370" y="178" width="10" height="18"/><rect x="338" y="252" width="10" height="18"/><rect x="306" y="289" width="10" height="18"/></g><rect class="warm-window" x="370" y="290" width="10" height="18" fill="#ffd5a1"/>
+<rect x="329" y="83" width="39" height="12" fill="#18344b"/><rect x="343" y="67" width="12" height="16" fill="#4a788a"/><path d="M349 67V31" stroke="#8bb8b9" stroke-width="3"/><circle id="beacon" cx="349" cy="29" r="5" fill="#fdab81"/>
+<path d="M494 393V178h244v215Z" fill="#182F4D"/><path d="M738 178 760 164v229h-22Z" fill="#10223B"/><path d="M494 178 516 164h244l-22 14Z" fill="#3F637B"/>
+<rect x="512" y="198" width="208" height="179" fill="url(#window)"/><path d="M534 217h167v58H534Z" fill="#0A1F36" stroke="#5b8fa6"/><text x="546" y="244" font-family="Arial,sans-serif" font-size="13" fill="#91BFCB" letter-spacing="4">EASTWELL</text><text x="547" y="263" font-family="Arial,sans-serif" font-size="10" fill="#F1BB81" letter-spacing="2">NORTH / 01</text>
+<rect class="warm-window" x="568" y="307" width="10" height="18" fill="#f3c599"/><rect x="668" y="344" width="10" height="18" fill="#d8e8da"/>
+<path d="M0 382h800v56H0Z" fill="#122C42"/><path d="M0 438h800v10H0Z" fill="#2b4b62"/>
+<path d="M0 451h800v179H0Z" fill="url(#road)"/><path d="M0 451h800" stroke="#7a9ca4" stroke-width="2"/><path d="M0 548h800" stroke="#b7c1b1" stroke-dasharray="52 42" stroke-opacity=".65" stroke-width="3"/>
+<g opacity=".8"><path d="M45 451v-94m0 1h21" stroke="#829fac" stroke-width="4" fill="none"/><path d="M33 358h25v8H33Z" fill="#e8bb84"/><path d="M770 451v-104m0 0h-31" stroke="#829fac" stroke-width="4" fill="none"/><path d="M738 347h34v8h-34Z" fill="#e8bb84"/></g>
+<path d="M0 469h800M0 610h800" stroke="#6b8a9d" stroke-opacity=".25" stroke-width="1"/>
+<g id="car"><path d="M1 513h28l17-21h58l22 21h19c10 0 15 8 15 15v17H0v-20c0-7 1-12 1-12Z" fill="#8ac6df" stroke="#d0f5f2" stroke-width="2"/><path d="m46 513 10-14h43l14 14Z" fill="#123752"/><path d="M57 499v14" stroke="#7caabc" stroke-width="3"/><path d="M9 524h14" stroke="#efc09d" stroke-width="6"/><path d="M142 524h13" stroke="#fa9a73" stroke-width="6"/><circle cx="39" cy="546" r="14" fill="#091320" stroke="#7295a6" stroke-width="4"/><circle cx="119" cy="546" r="14" fill="#091320" stroke="#7295a6" stroke-width="4"/><circle cx="39" cy="546" r="4" fill="#94b3c5"/><circle cx="119" cy="546" r="4" fill="#94b3c5"/></g>
+<g stroke="#6eabca" stroke-opacity=".2"><path d="M19 35v22m-11-11h22M750 70v22m-11-11h22M705 583v22m-11-11h22"/></g>
+<text x="32" y="596" fill="#85a9b8" font-size="11" font-family="monospace" letter-spacing="2">EW / 001 — CITY LIMITS</text>
+<rect id="scan" x="-10" width="3" height="630" fill="#75c7d3" opacity=".08"/>
+</svg>
