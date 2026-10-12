@@ -8,9 +8,9 @@
 <pattern id="window" width="32" height="37" patternUnits="userSpaceOnUse"><rect x="8" y="7" width="10" height="18" fill="#75A4BD" opacity=".22"/></pattern>
 </defs>
 <style>
-@keyframes roll{from{transform:translateX(-330px)}to{transform:translateX(930px)}}@keyframes pulse{50%{opacity:.35}}@keyframes windowlight{50%{opacity:.22}}@keyframes scan{to{transform:translateX(800px)}}
-#car{animation:roll 16s linear infinite}#beacon{animation:pulse 2.4s ease-in-out infinite}.warm-window{animation:windowlight 6s ease-in-out infinite}#scan{animation:scan 10s linear infinite}
-@media(prefers-reduced-motion:reduce){#car,#beacon,.warm-window,#scan{animation:none}#car{transform:translateX(180px)}}
+@keyframes wheelTurn{to{transform:rotate(360deg)}}@keyframes roll{from{transform:translateX(-330px)}to{transform:translateX(930px)}}@keyframes pulse{50%{opacity:.35}}@keyframes windowlight{50%{opacity:.22}}@keyframes scan{to{transform:translateX(800px)}}
+#car{animation:roll 16s linear infinite}#car .wheel-spin{transform-box:fill-box;transform-origin:center;animation:wheelTurn 1.2s linear infinite}#beacon{animation:pulse 2.4s ease-in-out infinite}.warm-window{animation:windowlight 6s ease-in-out infinite}#scan{animation:scan 10s linear infinite}
+@media(prefers-reduced-motion:reduce){#car,#beacon,.warm-window,#scan,#car .wheel-spin{animation:none}#car{transform:translateX(180px)}}
 </style>
 <rect width="800" height="630" fill="url(#sky)"/><rect width="800" height="630" fill="url(#grid)"/>
 <path d="M0 255 85 212l42 16 84-51 95 30 65-49 80 45 68-26 78 25 86-52 117 39v244H0Z" fill="#0b2039"/>
@@ -29,40 +29,58 @@
 <g opacity=".8"><path d="M45 451v-94m0 1h21" stroke="#829fac" stroke-width="4" fill="none"/><path d="M33 358h25v8H33Z" fill="#e8bb84"/><path d="M770 451v-104m0 0h-31" stroke="#829fac" stroke-width="4" fill="none"/><path d="M738 347h34v8h-34Z" fill="#e8bb84"/></g>
 <path d="M0 469h800M0 610h800" stroke="#6b8a9d" stroke-opacity=".25" stroke-width="1"/>
 <g id="car">
-  <!-- Sports-styled coupe with a continuous body profile, detailed cabin and rims -->
-  <ellipse cx="92" cy="560" rx="82" ry="10" fill="#07101b" opacity=".42"/>
-  <path d="M168 519h36l22 8-22 8h-36Z" fill="#ffe3b0" opacity=".16"/>
-  <path d="M10 541h20l-4 10H8c-4 0-8-3-8-7v-3h10Z" fill="#0a1423"/>
-  <path d="M145 544h28c8 0 13-3 13-9v11c0 5-4 8-9 8h-22Z" fill="#0b1524"/>
-  <path d="M8 528 L18 503 C24 490 39 482 57 482 H98 C116 482 129 487 143 497 L159 509 H170 C181 509 190 518 190 529 V541 C190 548 184 554 176 554 H165 C160 567 150 575 137 575 C124 575 113 567 108 554 H72 C67 567 57 575 44 575 C31 575 21 567 16 554 H11 C4 554 0 549 0 543 V537 C0 532 3 528 8 528Z" fill="#8fd3dd" stroke="#d8fbff" stroke-width="2.2" stroke-linejoin="round"/>
-  <path d="M16 542h140c7 0 13 2 17 6H14c-5 0-8-3-8-6h10Z" fill="#17314b" opacity=".92"/>
-  <path d="M28 545h95c10 0 19-3 25-8h11c-6 8-15 13-29 13H39c-9 0-14-2-18-5Z" fill="#0f2338" opacity=".85"/>
-  <path d="M51 489 H98 C110 489 119 492 128 499 L142 510 H59 C51 510 45 505 45 498 C45 494 47 491 51 489Z" fill="#10263d"/>
-  <path d="M58 492h31v18H50c0-6 3-14 8-18Z" fill="#14314a"/>
-  <path d="M91 492h7v18h-7Z" fill="#5c8799"/>
-  <path d="M100 492c9 0 18 3 25 8l12 10h-37Z" fill="#14314a"/>
-  <path d="M89 492v18 M58 510l7-17 M125 500l10 10" fill="none" stroke="#6e9daf" stroke-width="2"/>
-  <path d="M33 516h104" stroke="#d7fbff" stroke-width="1.5" opacity=".38"/>
-  <path d="M47 488h50" stroke="#d7fbff" stroke-width="1.1" opacity=".22"/>
-  <path d="M20 543c5-11 13-17 24-17 12 0 20 6 25 17" fill="#0a1422" opacity=".52"/>
-  <path d="M114 543c5-11 13-17 24-17 12 0 20 6 25 17" fill="#0a1422" opacity=".52"/>
-  <path d="M78 510v33 M111 510v31" fill="none" stroke="#5c8a9c" stroke-width="2" opacity=".45"/>
-  <rect x="84" y="522" width="8" height="2.5" rx="1.2" fill="#d7f0f0" opacity=".8"/>
-  <rect x="117" y="522" width="8" height="2.5" rx="1.2" fill="#d7f0f0" opacity=".8"/>
-  <path d="M150 513h18c8 0 14 5 14 12v5h-9c-2-7-8-12-16-17Z" fill="#b9f3ef" opacity=".38"/>
-  <rect x="163" y="520" width="7" height="10" rx="2" fill="#ffdca0"/>
-  <rect x="18" y="520" width="5" height="10" rx="2" fill="#ff9a74"/>
-  <path d="M28 488h30l14 5H38Z" fill="#0f2033"/>
-  <rect x="27" y="487" width="5" height="10" fill="#0d1c2c"/>
-  <rect x="55" y="489" width="4" height="8" fill="#0d1c2c"/>
-  <circle cx="44" cy="553" r="20" fill="#08111e"/>
-  <circle cx="44" cy="553" r="14" fill="#26384c" stroke="#8caabc" stroke-width="3"/>
-  <circle cx="44" cy="553" r="5" fill="#b8d0dc"/>
-  <path d="M44 539v28 M30 553h28 M35 544l18 18 M53 544l-18 18" stroke="#6f8ea3" stroke-width="1.6" opacity=".55"/>
-  <circle cx="138" cy="553" r="20" fill="#08111e"/>
-  <circle cx="138" cy="553" r="14" fill="#26384c" stroke="#8caabc" stroke-width="3"/>
-  <circle cx="138" cy="553" r="5" fill="#b8d0dc"/>
-  <path d="M138 539v28 M124 553h28 M129 544l18 18 M147 544l-18 18" stroke="#6f8ea3" stroke-width="1.6" opacity=".55"/>
+  <defs>
+    <linearGradient id="ew-paint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7896a7"/><stop offset=".37" stop-color="#426e89"/><stop offset="1" stop-color="#17324d"/></linearGradient>
+    <linearGradient id="ew-glass" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#42758b"/><stop offset=".4" stop-color="#173e59"/><stop offset="1" stop-color="#081d33"/></linearGradient>
+    <linearGradient id="ew-light" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#c1eee6" stop-opacity=".3"/><stop offset="1" stop-color="#fff5df" stop-opacity=".85"/></linearGradient>
+  </defs>
+  <ellipse cx="144" cy="565" rx="133" ry="10" fill="#040b14" opacity=".5"/>
+  <ellipse cx="282" cy="535" rx="24" ry="4" fill="#c9eeee" opacity=".085"/>
+  <path d="M274 553h33" stroke="#97d6df" stroke-width="2" stroke-opacity=".22"/>
+  <!-- Satin-black tires and rotating multi-spoke rims -->
+  <g fill="#080f1a" stroke="#24384a" stroke-width="2"><circle cx="62" cy="548" r="21"/><circle cx="213" cy="548" r="21"/></g>
+  <g transform="translate(62 548)"><g class="wheel-spin">
+    <circle r="14" fill="#223a4d" stroke="#87a2ad" stroke-width="1.6"/>
+    <circle r="10" fill="#101e2f" stroke="#607e91" stroke-width=".8"/>
+    <path d="M0-12V-4 M0 4V12 M-12 0H-4 M4 0H12 M-8-8-3-3 M3 3 8 8 M-8 8-3 3 M3-3 8-8" stroke="#91b3bc" stroke-width="2.7"/>
+    <circle r="3.3" fill="#9cc5cc"/>
+  </g></g>
+  <g transform="translate(213 548)"><g class="wheel-spin">
+    <circle r="14" fill="#223a4d" stroke="#87a2ad" stroke-width="1.6"/>
+    <circle r="10" fill="#101e2f" stroke="#607e91" stroke-width=".8"/>
+    <path d="M0-12V-4 M0 4V12 M-12 0H-4 M4 0H12 M-8-8-3-3 M3 3 8 8 M-8 8-3 3 M3-3 8-8" stroke="#91b3bc" stroke-width="2.7"/>
+    <circle r="3.3" fill="#9cc5cc"/>
+  </g></g>
+  <!-- Low 1990s-inspired coupe with the wheel-arch gaps drawn into the silhouette -->
+  <path d="M10 524 22 517 90 513 113 490 Q118 487 130 487 H160 Q173 487 183 496 L199 514 251 518 Q261 520 267 528 L272 537 271 545 Q269 552 260 552 H242 C241 536 230 527 213 527 C197 527 187 537 186 552 H89 C88 537 77 527 62 527 C46 527 36 538 35 552 H16 Q7 552 7 543 V533 Q7 527 10 524Z" fill="url(#ew-paint)" stroke="#648b9d" stroke-width="1.1" stroke-linejoin="round"/>
+  <path d="M23 519 91 515 113 490 128 487 160 487 174 490 196 515 247 520 201 522 99 521 64 522 15 527Z" fill="#7da5b2" opacity=".23"/>
+  <path d="M17 525 91 520 198 520 253 523" fill="none" stroke="#b6d1d7" stroke-width="1.4" opacity=".85"/>
+  <!-- Angled side glass and supporting window trim -->
+  <path d="M105 512 117 496 Q119 493 128 493 H146 V513Z" fill="url(#ew-glass)" stroke="#172d43" stroke-width="1"/>
+  <path d="M151 493 H160 Q169 493 176 502 L187 513 H151Z" fill="url(#ew-glass)" stroke="#172d43" stroke-width="1"/>
+  <path d="M119 496 128 494 H144 M153 495H159 Q167 495 172 501" fill="none" stroke="#a0d9df" stroke-width="1.5" opacity=".45"/>
+  <path d="M148 491V517 M102 514 114 492 M182 500 197 518" fill="none" stroke="#20374b" stroke-width="2"/>
+  <!-- Sheet-metal details, single door, side skirt -->
+  <path d="M92 525 182 525 190 530 95 530Z" fill="#a8d7d6" opacity=".16"/>
+  <path d="M93 548H184L180 556H92Z" fill="#0b1b2d"/>
+  <path d="M96 545H183" stroke="#6eabb3" stroke-width="1" opacity=".45"/>
+  <path d="M99 521 96 545 M150 518V540" stroke="#1b354a" fill="none" stroke-width="1.2"/>
+  <path d="M155 526h11" stroke="#a9d2d4" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M100 525 90 535" stroke="#28495d" stroke-width="1"/>
+  <path d="M24 526 40 523 M188 524 204 520" stroke="#9bb8bb" opacity=".5" stroke-width="1.2"/>
+  <!-- Modest aero wing, splitter and diffuser -->
+  <path d="M23 514V505 M47 514V506" stroke="#183047" stroke-width="2.8"/>
+  <path d="M11 504 60 504 66 507 16 509Z" fill="#12273e" stroke="#577c8c" stroke-width="1"/>
+  <path d="M248 541 269 541 270 547 256 548Z" fill="#071523"/>
+  <path d="M246 549 273 549 268 553 242 553Z" fill="#091728"/>
+  <path d="M15 549 35 551 33 554 10 552Z" fill="#0c2033"/>
+  <!-- Narrow period-correct tail lamps and LEDs -->
+  <path d="M9 526 21 524 22 530 8 532Z" fill="#d97665"/>
+  <path d="M8 529 22 527" stroke="#ffb49c" stroke-width="1.4"/>
+  <path d="M253 523 267 526 269 531 255 528Z" fill="url(#ew-light)"/>
+  <path d="M255 524 266 527" stroke="#d6f8ed" stroke-width="1.2"/>
+  <path d="M109 533h73l-9 3h-62Z" fill="#86bbc6" opacity=".22"/>
+  <text x="111" y="545" fill="#b5d6d5" opacity=".72" font-family="monospace" font-size="7" letter-spacing="1">EW // 01</text>
 </g>
 <g stroke="#6eabca" stroke-opacity=".2"><path d="M19 35v22m-11-11h22M750 70v22m-11-11h22M705 583v22m-11-11h22"/></g>
 <text x="32" y="596" fill="#85a9b8" font-size="11" font-family="monospace" letter-spacing="2">EW / 001 — CITY LIMITS</text>
