@@ -28,7 +28,42 @@
 <path d="M0 451h800v179H0Z" fill="url(#road)"/><path d="M0 451h800" stroke="#7a9ca4" stroke-width="2"/><path d="M0 548h800" stroke="#b7c1b1" stroke-dasharray="52 42" stroke-opacity=".65" stroke-width="3"/>
 <g opacity=".8"><path d="M45 451v-94m0 1h21" stroke="#829fac" stroke-width="4" fill="none"/><path d="M33 358h25v8H33Z" fill="#e8bb84"/><path d="M770 451v-104m0 0h-31" stroke="#829fac" stroke-width="4" fill="none"/><path d="M738 347h34v8h-34Z" fill="#e8bb84"/></g>
 <path d="M0 469h800M0 610h800" stroke="#6b8a9d" stroke-opacity=".25" stroke-width="1"/>
-<g id="car"><path d="M1 513h28l17-21h58l22 21h19c10 0 15 8 15 15v17H0v-20c0-7 1-12 1-12Z" fill="#8ac6df" stroke="#d0f5f2" stroke-width="2"/><path d="m46 513 10-14h43l14 14Z" fill="#123752"/><path d="M57 499v14" stroke="#7caabc" stroke-width="3"/><path d="M9 524h14" stroke="#efc09d" stroke-width="6"/><path d="M142 524h13" stroke="#fa9a73" stroke-width="6"/><circle cx="39" cy="546" r="14" fill="#091320" stroke="#7295a6" stroke-width="4"/><circle cx="119" cy="546" r="14" fill="#091320" stroke="#7295a6" stroke-width="4"/><circle cx="39" cy="546" r="4" fill="#94b3c5"/><circle cx="119" cy="546" r="4" fill="#94b3c5"/></g>
+<g id="car">
+  <!-- Sports-styled coupe with a continuous body profile, detailed cabin and rims -->
+  <ellipse cx="92" cy="560" rx="82" ry="10" fill="#07101b" opacity=".42"/>
+  <path d="M168 519h36l22 8-22 8h-36Z" fill="#ffe3b0" opacity=".16"/>
+  <path d="M10 541h20l-4 10H8c-4 0-8-3-8-7v-3h10Z" fill="#0a1423"/>
+  <path d="M145 544h28c8 0 13-3 13-9v11c0 5-4 8-9 8h-22Z" fill="#0b1524"/>
+  <path d="M8 528 L18 503 C24 490 39 482 57 482 H98 C116 482 129 487 143 497 L159 509 H170 C181 509 190 518 190 529 V541 C190 548 184 554 176 554 H165 C160 567 150 575 137 575 C124 575 113 567 108 554 H72 C67 567 57 575 44 575 C31 575 21 567 16 554 H11 C4 554 0 549 0 543 V537 C0 532 3 528 8 528Z" fill="#8fd3dd" stroke="#d8fbff" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M16 542h140c7 0 13 2 17 6H14c-5 0-8-3-8-6h10Z" fill="#17314b" opacity=".92"/>
+  <path d="M28 545h95c10 0 19-3 25-8h11c-6 8-15 13-29 13H39c-9 0-14-2-18-5Z" fill="#0f2338" opacity=".85"/>
+  <path d="M51 489 H98 C110 489 119 492 128 499 L142 510 H59 C51 510 45 505 45 498 C45 494 47 491 51 489Z" fill="#10263d"/>
+  <path d="M58 492h31v18H50c0-6 3-14 8-18Z" fill="#14314a"/>
+  <path d="M91 492h7v18h-7Z" fill="#5c8799"/>
+  <path d="M100 492c9 0 18 3 25 8l12 10h-37Z" fill="#14314a"/>
+  <path d="M89 492v18 M58 510l7-17 M125 500l10 10" fill="none" stroke="#6e9daf" stroke-width="2"/>
+  <path d="M33 516h104" stroke="#d7fbff" stroke-width="1.5" opacity=".38"/>
+  <path d="M47 488h50" stroke="#d7fbff" stroke-width="1.1" opacity=".22"/>
+  <path d="M20 543c5-11 13-17 24-17 12 0 20 6 25 17" fill="#0a1422" opacity=".52"/>
+  <path d="M114 543c5-11 13-17 24-17 12 0 20 6 25 17" fill="#0a1422" opacity=".52"/>
+  <path d="M78 510v33 M111 510v31" fill="none" stroke="#5c8a9c" stroke-width="2" opacity=".45"/>
+  <rect x="84" y="522" width="8" height="2.5" rx="1.2" fill="#d7f0f0" opacity=".8"/>
+  <rect x="117" y="522" width="8" height="2.5" rx="1.2" fill="#d7f0f0" opacity=".8"/>
+  <path d="M150 513h18c8 0 14 5 14 12v5h-9c-2-7-8-12-16-17Z" fill="#b9f3ef" opacity=".38"/>
+  <rect x="163" y="520" width="7" height="10" rx="2" fill="#ffdca0"/>
+  <rect x="18" y="520" width="5" height="10" rx="2" fill="#ff9a74"/>
+  <path d="M28 488h30l14 5H38Z" fill="#0f2033"/>
+  <rect x="27" y="487" width="5" height="10" fill="#0d1c2c"/>
+  <rect x="55" y="489" width="4" height="8" fill="#0d1c2c"/>
+  <circle cx="44" cy="553" r="20" fill="#08111e"/>
+  <circle cx="44" cy="553" r="14" fill="#26384c" stroke="#8caabc" stroke-width="3"/>
+  <circle cx="44" cy="553" r="5" fill="#b8d0dc"/>
+  <path d="M44 539v28 M30 553h28 M35 544l18 18 M53 544l-18 18" stroke="#6f8ea3" stroke-width="1.6" opacity=".55"/>
+  <circle cx="138" cy="553" r="20" fill="#08111e"/>
+  <circle cx="138" cy="553" r="14" fill="#26384c" stroke="#8caabc" stroke-width="3"/>
+  <circle cx="138" cy="553" r="5" fill="#b8d0dc"/>
+  <path d="M138 539v28 M124 553h28 M129 544l18 18 M147 544l-18 18" stroke="#6f8ea3" stroke-width="1.6" opacity=".55"/>
+</g>
 <g stroke="#6eabca" stroke-opacity=".2"><path d="M19 35v22m-11-11h22M750 70v22m-11-11h22M705 583v22m-11-11h22"/></g>
 <text x="32" y="596" fill="#85a9b8" font-size="11" font-family="monospace" letter-spacing="2">EW / 001 — CITY LIMITS</text>
 <rect id="scan" x="-10" width="3" height="630" fill="#75c7d3" opacity=".08"/>
